@@ -1,0 +1,83 @@
+div img{
+    display: inline-block;
+    position: relative;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 10%;
+}
+#clock1 {
+    position: absolute;
+    background-color: blue;
+    border: solid 1px black;
+    width: 160px;
+    height: 20px;
+    margin-left: 50.7%;
+    margin-top: -20.5%;
+    animation: ani2 1s linear infinite;
+    transform-origin: 0% 100%;
+    
+}
+#clock2{
+    position: absolute;
+    background-color: red;
+    border: solid 1px black;
+    width: 20px;
+    height: 120px; 
+    margin-left: 50.7%;
+    margin-top: -29%;
+    animation: ani1 60s linear infinite;
+    transform-origin: 0% 100%;
+    
+}
+@keyframes ani1 {
+    0%{
+ transform: rotate(72deg);
+    }
+    25%{
+        transform: rotate(144deg);
+    }
+    50%{
+        transform: rotate(216deg);
+    }
+    75%{
+        transform: rotate(288deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ani2 {
+    0%{
+ transform: rotate(-36deg);
+    }
+    10%{
+        transform: rotate(72deg);
+    }
+    20%{
+        transform: rotate(108deg);
+    }
+    30%{
+        transform: rotate(144deg);
+    }
+    40%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(216deg);
+    }
+    60%{
+        transform: rotate(252deg);
+    }
+    70%{
+        transform: rotate(288deg);
+    }
+    80%{
+        transform: rotate(324deg);
+    }
+    90%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
